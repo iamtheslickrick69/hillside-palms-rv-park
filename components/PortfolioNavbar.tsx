@@ -56,8 +56,8 @@ export const PortfolioNavbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+          <div className="hidden lg:flex items-center flex-1 justify-between ml-10">
+            <div className="flex items-baseline space-x-6">
               {navigationLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -71,6 +71,17 @@ export const PortfolioNavbar = () => {
                   ></div>
                 </Link>
               ))}
+            </div>
+
+            <div className="flex items-center gap-3">
+              <a
+                href="tel:4356732809"
+                className="flex items-center gap-2 text-foreground hover:text-primary text-sm font-medium transition-colors duration-200"
+                style={{ fontFamily: "Figtree" }}
+              >
+                <Phone className="w-4 h-4" />
+                (435) 673-2809
+              </a>
               <Link
                 href="/resident/login"
                 className="flex items-center gap-1.5 border border-border text-foreground px-4 py-2.5 rounded-full text-sm font-medium hover:bg-muted transition-all duration-200"
@@ -95,40 +106,6 @@ export const PortfolioNavbar = () => {
                 <span style={{ fontFamily: "Figtree", fontWeight: "500" }}>Reserve Now</span>
               </Link>
             </div>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href="tel:4356732809"
-              className="flex items-center gap-2 text-foreground hover:text-primary text-sm font-medium transition-colors duration-200"
-              style={{ fontFamily: "Figtree" }}
-            >
-              <Phone className="w-4 h-4" />
-              (435) 673-2809
-            </a>
-            <Link
-              href="/resident/login"
-              className="flex items-center gap-1.5 border border-border text-foreground px-4 py-2.5 rounded-full text-sm font-medium hover:bg-muted transition-all duration-200"
-              style={{ fontFamily: "Figtree" }}
-            >
-              <User className="w-3.5 h-3.5" />
-              Resident
-            </Link>
-            <Link
-              href="/admin/login"
-              className="flex items-center gap-1.5 border border-border text-foreground px-4 py-2.5 rounded-full text-sm font-medium hover:bg-muted transition-all duration-200"
-              style={{ fontFamily: "Figtree" }}
-            >
-              <Lock className="w-3.5 h-3.5" />
-              Admin
-            </Link>
-            <Link
-              href="/reserve"
-              className="bg-[#156d95] text-white px-[18px] rounded-full text-base font-semibold hover:bg-[#156d95]/90 transition-all duration-200 hover:rounded-2xl shadow-sm hover:shadow-md whitespace-nowrap leading-4 py-[15px]"
-              style={{ fontFamily: "Plus Jakarta Sans, sans-serif" }}
-            >
-              <span style={{ fontFamily: "Figtree", fontWeight: "500" }}>Reserve Now</span>
-            </Link>
           </div>
 
           <div className="lg:hidden">
