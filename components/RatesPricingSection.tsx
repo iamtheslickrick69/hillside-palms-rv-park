@@ -56,15 +56,15 @@ const plans: PricingPlan[] = [
   },
   {
     name: "Monthly",
-    price: { standard: "Call", premium: "Call" },
+    price: { standard: 1200, premium: 1400 },
     level: "monthly",
     description: "Best value for extended stays",
   },
   {
     name: "Seasonal",
-    price: { standard: "Call", premium: "Call" },
+    price: { standard: "From $1,080/mo", premium: "From $1,260/mo" },
     level: "seasonal",
-    description: "3-6 month snowbird packages available",
+    description: "3-6 month snowbird packages (10% discount)",
   },
 ]
 
