@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Phone, Lock, User } from "lucide-react"
+import { Menu, X, Lock, User } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -80,15 +80,6 @@ export const PortfolioNavbar = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <a
-                href="tel:4356732809"
-                className="flex items-center gap-2 text-gray-700 hover:text-[#156d95] text-[15px] font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-gray-50"
-                style={{ fontFamily: "Figtree" }}
-              >
-                <Phone className="w-4 h-4" />
-                (435) 673-2809
-              </a>
-              <div className="w-px h-8 bg-gray-200"></div>
               <Link
                 href="/resident/login"
                 className="flex items-center gap-2 text-gray-700 hover:text-[#156d95] px-4 py-2 rounded-lg text-[14px] font-medium hover:bg-gray-50 transition-all duration-200"
@@ -149,14 +140,6 @@ export const PortfolioNavbar = () => {
                 </Link>
               ))}
               <div className="pt-4 border-t border-gray-200 space-y-3 mt-4">
-                <a
-                  href="tel:4356732809"
-                  className="flex items-center justify-center gap-2 w-full text-gray-700 hover:bg-gray-50 rounded-lg py-3 text-base font-medium"
-                  style={{ fontFamily: "Figtree" }}
-                >
-                  <Phone className="w-5 h-5" />
-                  (435) 673-2809
-                </a>
                 <Link
                   href="/resident/login"
                   onClick={closeMobileMenu}
