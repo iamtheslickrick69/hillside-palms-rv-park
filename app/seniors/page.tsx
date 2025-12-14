@@ -1,13 +1,13 @@
 import { PortfolioNavbar } from "@/components/PortfolioNavbar"
 import { Footer } from "@/components/Footer"
-import { SeniorsSection } from "@/components/SeniorsSection"
+import { SeniorsAndEventsSection } from "@/components/SeniorsAndEventsSection"
 
 export default function SeniorsPage() {
   return (
     <>
       <PortfolioNavbar />
       <main className="pt-20">
-        <SeniorsSection />
+        <SeniorsAndEventsSection />
       </main>
       <Footer />
     </>

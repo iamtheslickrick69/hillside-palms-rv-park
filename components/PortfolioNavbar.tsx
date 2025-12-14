@@ -13,8 +13,7 @@ const navigationLinks = [
   { name: "Reserve", href: "/reserve" },
   { name: "Storage", href: "/storage" },
   { name: "City View", href: "/city-view" },
-  { name: "Events", href: "/events" },
-  { name: "Seniors", href: "/seniors" },
+  { name: "Community", href: "/seniors" },
   { name: "Contact", href: "/contact" },
 ]
 
