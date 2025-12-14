@@ -102,23 +102,41 @@ export function StorageSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {/* Pricing */}
           <div className="p-8 rounded-2xl border border-border bg-card">
-            <h2 className="font-figtree text-2xl font-medium mb-6">Monthly Storage</h2>
-            <div className="text-center py-8 mb-6 rounded-xl bg-[#156d95]/5">
-              <p className="font-figtree text-lg text-muted-foreground mb-2">Starting at</p>
-              <p className="font-figtree text-4xl font-medium text-[#156d95]">Contact for Pricing</p>
-              <p className="font-figtree text-sm text-muted-foreground mt-2">Discounts for 6+ month commitments</p>
+            <h2 className="font-figtree text-2xl font-medium mb-6">Monthly Storage Rates</h2>
+            <div className="space-y-4 mb-6">
+              <div className="p-4 rounded-xl bg-[#156d95]/5 border border-[#156d95]/20">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-figtree text-sm text-muted-foreground">Uncovered Storage</p>
+                    <p className="font-figtree text-2xl font-semibold text-[#156d95]">$125-175/mo</p>
+                  </div>
+                  <p className="font-figtree text-xs text-muted-foreground">Based on RV size</p>
+                </div>
+              </div>
+              <div className="p-4 rounded-xl bg-[#156d95]/5 border border-[#156d95]/20">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-figtree text-sm text-muted-foreground">Covered Storage</p>
+                    <p className="font-figtree text-2xl font-semibold text-[#156d95]">$225-275/mo</p>
+                  </div>
+                  <p className="font-figtree text-xs text-muted-foreground">Limited availability</p>
+                </div>
+              </div>
+              <div className="text-center py-2">
+                <p className="font-figtree text-sm text-muted-foreground">10% discount for 6+ month commitments</p>
+              </div>
             </div>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between font-figtree">
-                <span>Auto-pay options</span>
+            <div className="space-y-3 border-t border-border pt-4">
+              <div className="flex items-center justify-between font-figtree text-sm">
+                <span>Auto-pay options available</span>
                 <CheckCircle2 className="w-5 h-5 text-[#156d95]" />
               </div>
-              <div className="flex items-center justify-between font-figtree">
+              <div className="flex items-center justify-between font-figtree text-sm">
                 <span>No long-term contracts</span>
                 <CheckCircle2 className="w-5 h-5 text-[#156d95]" />
               </div>
-              <div className="flex items-center justify-between font-figtree">
-                <span>Flexible payment</span>
+              <div className="flex items-center justify-between font-figtree text-sm">
+                <span>Flexible payment plans</span>
                 <CheckCircle2 className="w-5 h-5 text-[#156d95]" />
               </div>
             </div>

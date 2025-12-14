@@ -15,8 +15,8 @@ type ProductTeaserCardProps = {
   secondaryButtonHref?: string
 }
 
-// @component: ProductTeaserCard
-export const ProductTeaserCard = (props: ProductTeaserCardProps) => {
+// @component: HeroSection
+export const HeroSection = (props: ProductTeaserCardProps) => {
   const {
     dailyVolume = "300+",
     dailyVolumeLabel = "DAYS OF SUNSHINE ANNUALLY",

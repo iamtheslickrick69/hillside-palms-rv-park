@@ -59,8 +59,8 @@ const generateDataPoints = (): DataPoint[] => {
   return points
 }
 
-// @component: BankingScaleHero
-export const BankingScaleHero = () => {
+// @component: WelcomeHeroSection
+export const WelcomeHeroSection = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [dataPoints] = useState<DataPoint[]>(generateDataPoints())
   const [typingComplete, setTypingComplete] = useState(false)

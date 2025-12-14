@@ -33,8 +33,8 @@ const amenitiesRow2: Amenity[] = [
   { name: "Snowbird Friendly", icon: <Sun className="w-6 h-6 text-[#156d95]" /> },
 ]
 
-// @component: IntegrationCarousel
-export const IntegrationCarousel = () => {
+// @component: AmenitiesCarousel
+export const AmenitiesCarousel = () => {
   const topRowRef = useRef<HTMLDivElement>(null)
   const bottomRowRef = useRef<HTMLDivElement>(null)
 

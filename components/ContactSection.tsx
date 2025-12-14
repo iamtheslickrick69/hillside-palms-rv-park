@@ -215,25 +215,34 @@ export function ContactSection() {
               </p>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Google Maps */}
             <div className="rounded-2xl border border-border bg-card overflow-hidden">
-              <div className="aspect-video bg-secondary flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin className="w-12 h-12 text-[#156d95] mx-auto mb-4" />
-                  <h3 className="font-figtree text-xl font-medium mb-2">Find Us</h3>
-                  <p className="font-figtree text-muted-foreground mb-4">
-                    650 East St. George Blvd
-                    <br />
-                    St. George, UT 84770
-                  </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3188.8!2d-113.5639!3d37.1041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA2JzE0LjgiTiAxMTPCsDMzJzUwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+                title="Hillside Palms RV Park Location"
+              ></iframe>
+              <div className="p-4 bg-card border-t border-border">
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-[#156d95] flex-shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <p className="font-figtree font-medium">650 East St. George Blvd</p>
+                    <p className="font-figtree text-sm text-muted-foreground">St. George, UT 84770</p>
+                  </div>
                   <a
                     href="https://maps.google.com/?q=650+East+St+George+Blvd+St+George+UT+84770"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-[#156d95] text-white px-6 py-3 rounded-full font-figtree hover:bg-[#156d95]/90 transition-all"
+                    className="inline-flex items-center gap-1 text-[#156d95] font-figtree text-sm font-medium hover:underline whitespace-nowrap"
                   >
+                    Directions
                     <Navigation className="w-4 h-4" />
-                    Open in Google Maps
                   </a>
                 </div>
               </div>
